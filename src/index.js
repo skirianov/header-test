@@ -19,7 +19,7 @@ drawingDk.onload = () => {
   contextDk.drawImage(drawingDk, 0, 0, canvas.width, canvas.height);
 };
 
-const sampleHeader = new URL("./assets/test.png", import.meta.url);
+const sampleHeader = new URL("./assets/test.webp", import.meta.url);
 
 
 const drawHeader = (image) => {
