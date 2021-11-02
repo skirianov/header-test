@@ -8,18 +8,18 @@ const height = canvas.height;
 const width = canvas.width;
 
 const drawing = new Image();
-drawing.src = "./assets/iphone-lt.png";
+drawing.src = new URL("./assets/iphone-lt.png", import.meta.url);
 drawing.onload = () => {
   context.drawImage(drawing, 0, 0, canvas.width, canvas.height);
 };
 
 const drawingDk = new Image();
-drawingDk.src = "./assets/iphone-dk.png";
+drawingDk.src = new URL("./assets/iphone-dk.png", import.meta.url);
 drawingDk.onload = () => {
   contextDk.drawImage(drawingDk, 0, 0, canvas.width, canvas.height);
 };
 
-const sampleHeader = './assets/test.png';
+const sampleHeader = new URL("./assets/test.png", import.meta.url);
 
 
 const drawHeader = (image) => {
