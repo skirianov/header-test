@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Head Test</title>
+  <meta name="description" content="Test your Twitter Header on different devices!">
+  <meta name="author" content="@SergiiKirianov">
+
+  <meta property="og:title" content="Header test">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="Your new header looks lit! But is it lit for everyone? Find out!">
+  <!-- <meta property="og:image" content="image.png"> -->
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <head>
+    <h1 class="text-center font-bold text-2xl md:text-4xl lg:text-5xl my-2 md:my-6 md:my-8 lg:my-10">Test your Twitter header!</h1>
+  </head>
+  <main>
+    <p class="text-center text-lg md:text-xl mx-2">Made a cool Twitter header but not sure how will it look on iPhone?</p>
+    <p class="text-center text-lg md:text-xl mx-2">Upload it here and see the result 💖 </p>
+    <div class="text-center my-6">
+      <label class="bg-pink-500 px-6 py-2 text-white text-xl md:text-lg font-semibold rounded-lg transform hover:scale-105 duration-300 hover:bg-pink-400 cursor-pointer">
+        <input type="file" style="display: none" id="upload" accept="image/*"></input>
+        Upload
+    </label>
+    </div>
+    <div class="flex flex-col space-y-4 md:space-y-10 w-4/4 sm:w-3/4 md:w-2/4 lg:w-2/4 xl:w-5/12 2xl:w-3/12 m-2 sm:m-auto my-4">
+      <canvas id="iphone-12-pro-max-lt" class="bg-white border-2 p-2 bg-gray-100 shadow-xl" width="450" height="222"></canvas>
+      <canvas id="iphone-12-pro-max-dk" class="bg-white border-2 p-2 bg-gray-100 shadow-xl" width="450" height="222"></canvas>
+    </div>
+  </main>
+  <script type="module" src="index.js"></script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+  kofiWidgetOverlay.draw('skirianov', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+</body>
+</html>
